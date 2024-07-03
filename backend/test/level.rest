@@ -1,0 +1,29 @@
+@url = http://localhost:4202
+
+### GET ALL LEVELS
+GET {{url}}/levels
+
+### GET SINGLE LEVEL
+GET {{url}}/levels/6685417a55f19e2d0e426e1e
+
+### ADD SINGLE LEVEL
+POST {{url}}/levels
+Content-Type: application/json
+
+{
+    "level": "Auf Klo"
+}
+
+### UPDATE SINGLE LEVEL
+PATCH {{url}}/levels/6685423d55f19e2d0e426e2b
+Content-Type: application/json
+
+{
+    "level": "Katagana"
+}	
+
+### DELETE SINGLE LEVEL
+DELETE {{url}}/levels/6685429955f19e2d0e426e30
+
+### CLEAR ALL LEVELS
+DELETE {{url}}/levels

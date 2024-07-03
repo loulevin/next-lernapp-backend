@@ -1,0 +1,35 @@
+@url = http://localhost:4202
+
+### GET ALL VOCABELS
+GET {{url}}/vocabels
+
+
+### GET SINGLE VOCABEL 
+GET {{url}}/vocabels/668541cb55f19e2d0e426e23
+
+
+### ADD SINGLE VOCABEL
+POST {{url}}/vocabels
+Content-Type: application/json
+
+{
+  "japanese": "きのう",
+  "reading": "neru",
+  "kanji": "寝る",
+  "translate": "schlafen"
+}
+
+### UPDATE SINGLE VOCABEL
+PATCH {{url}}/vocabels/6685439b55f19e2d0e426e3c
+Content-Type: application/json
+
+{
+  "japanese": "ねる"
+}
+
+### DELETE SINGLE VOCABEL
+DELETE {{url}}/vocabels/668544130367b67460f162a1
+
+
+### CLEAR ALL VOCABELS
+DELETE {{url}}/vocabels
