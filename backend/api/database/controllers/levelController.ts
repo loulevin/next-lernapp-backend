@@ -11,7 +11,7 @@ export const getSingleLevel = async (req: Request, res: Response) => {
   }
 };
 
-export const getAllSchema = async (req: Request, res: Response) => {
+export const getAllLevel = async (req: Request, res: Response) => {
   try {
     const levels = await Level.find();
     handleResponse(res, req, levels);

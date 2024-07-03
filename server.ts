@@ -2,6 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import { vocabelRouter } from './backend/api/database/routers/vocabelRouter'
+import { levelRouter } from './backend/api/database/routers/levelRouter'
 
 dotenv.config();
 
@@ -11,6 +13,9 @@ const dbURL = process.env.DB_URL
 
 app.use(express.json())
 app.use(cors())
+
+app.use('/vocabels', vocabelRouter)
+app.use('/levels', levelRouter)
 
 const connectDb = async () => {
     try {
