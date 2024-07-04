@@ -13,10 +13,11 @@ POST {{url}}/vocabels
 Content-Type: application/json
 
 {
-  "japanese": "きのう",
-  "reading": "neru",
-  "kanji": "寝る",
-  "translate": "schlafen"
+  "japanese": "はなし",
+  "reading": "hanashi",
+  "kanji": "話",
+  "translate": "Geschichte, Gespräch",
+  "level": "668547970367b67460f162aa"
 }
 
 ### UPDATE SINGLE VOCABEL

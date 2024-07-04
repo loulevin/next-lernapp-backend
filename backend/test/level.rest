@@ -11,7 +11,7 @@ POST {{url}}/levels
 Content-Type: application/json
 
 {
-    "level": "Auf Klo"
+    "level": "N5"
 }
 
 ### UPDATE SINGLE LEVEL

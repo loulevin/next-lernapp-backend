@@ -7,7 +7,7 @@ export const getSingleVocabel = async (
   res: express.Response
 ) => {
   try {
-    const vocabel = await Vocabel.findById(req.params.id);
+    const vocabel = await Vocabel.findById(req.params.id).populate(["level"]);
     handleResponse(res, req, vocabel);
   } catch (e) {
     handleError(res, e);
@@ -19,7 +19,7 @@ export const getAllVocabels = async (
   res: express.Response
 ) => {
   try {
-    const vocabels = await Vocabel.find();
+    const vocabels = await Vocabel.find().populate("level");
     handleResponse(res, req, vocabels);
   } catch (e) {
     handleError(res, e);
