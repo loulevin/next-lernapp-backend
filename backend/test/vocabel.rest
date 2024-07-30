@@ -13,10 +13,10 @@ POST {{url}}/vocabels
 Content-Type: application/json
 
 {
-  "japanese": "はなし",
-  "reading": "hanashi",
-  "kanji": "話",
-  "translate": "Geschichte, Gespräch",
+  "japanese": "のる",
+  "reading": "noru",
+  "kanji": "乗る",
+  "translate": "einsteigen, aufsteigen",
   "level": "668547970367b67460f162aa"
 }
 
